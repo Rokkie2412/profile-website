@@ -1,0 +1,45 @@
+.footer{
+  margin-top: 2rem;
+  height: 14vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  color: var(--text-color);
+  padding-bottom: 10px;
+  scroll-snap-align: start;
+}
+
+.footer h5{
+  font-weight: 600;
+  font-size: 0.7rem;
+  margin-bottom: 3px;
+}
+
+.footer p{
+  font-weight: 600;
+  font-size: 0.7rem;
+  color: var(--foreground-color);
+}
+
+.footer-logos{
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6vh;
+}
+
+.footer-logos a{
+  font-size: 32px;
+  margin: 3px 8px;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--foreground-color);
+  transition: all 0.2s ease-in-out;
+}
+
+.footer-logos a:hover{
+  font-size: 2.4rem;
+}

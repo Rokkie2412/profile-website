@@ -1,0 +1,213 @@
+.about-container {
+    width: 100%;
+    height: 46.875rem; /* 75vh */
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+    justify-content: space-evenly;
+    scroll-snap-align: start;
+}
+
+.about-photo {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 37.5rem; /* 60vh */
+    border-radius: 10%;
+    justify-content: space-around;
+}
+
+.about-avatar {
+    border-radius: 10%;
+    height: 25rem;
+    align-self: center;
+    filter: grayscale(100%) brightness(0.9);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
+}
+
+.about-avatar:hover {
+    filter: grayscale(0);
+    transform: scale(1.07); /* Slightly increase the scale for a more pronounced effect */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4); /* Increase shadow intensity on hover */
+}
+
+.about-me {
+    width: 60%;
+    height: 25rem; /* 50vh */
+    background-color: var(--secondary-color);
+    border-radius: 0.8rem; /* 20px */
+    display: flex;
+    padding: 0.875rem; /* 14px */
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about-text {
+    width: 40%;
+    height: 18.75rem; /* 30vh */
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+}
+
+.about-text h1 {
+    text-align: center;
+    color: var(--foreground-color);
+    font-size: 2rem; /* 32px */
+    margin-bottom: 2.2rem;
+}
+
+.about-text p {
+    text-align: justify;
+    background-color: var(--secondary-color);
+}
+
+.contact-me {
+    width: 45%;
+    height: 18.75rem; /* 30vh */
+    display: flex;
+    flex-direction: column;
+    /* background-color: aliceblue; */
+}
+
+.contact-me h1 {
+    text-align: center;
+    color: var(--foreground-color);
+    font-size: 2rem; /* 32px */
+    margin-bottom: 2.2rem;
+}
+
+.contact-container {
+    height: 6.25rem; /* 100px */
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-container a {
+    width: 7.5rem; /* 120px */
+    border: solid 3px var(--foreground-color);
+    border-radius: 8%; /* 8% */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--foreground-color);
+    text-decoration: none;
+    transition: 0.3s;
+    margin: 3px; /* 10px */
+}
+
+.contact-container a:hover {
+    background-color: var(--foreground-color);
+    color: var(--secondary-color);
+}
+
+.contact-container span {
+    font-size: 2rem; /* 32px */
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1279px) {
+    .contact-me h1 {
+        font-size: 1.5rem;
+    }
+
+    .about-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .about-avatar {
+        height: 21rem;
+    }
+    
+    .about-text p {
+        font-size: 12px;
+    }
+
+    .contact-container a {
+        width: 5.2rem; /* 120px */
+        min-width: 5rem;
+    }
+
+    .contact-container span {
+        font-size: 1.8rem; /* 32px */
+    }
+
+    .contact-container h3 {
+        font-size: 0.8rem; /* 32px */
+    }
+
+    .about-me {
+        height: 21rem;
+        width: 64%;
+        margin-left: 10px;
+    }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 375px) {
+    .about-container {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        height: auto;
+        width: auto;
+    }
+    .about-photo {
+        width: 100%;
+        height: auto;
+    }
+    .about-photo h1 {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+    .about-photo img {
+        width: 280px;
+    }
+    .about-me {
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .about-text {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .about-text h1 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+    .about-text p {
+        font-size: 15px;
+        margin-bottom: 1rem;
+    }
+    .contact-me {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 100%;
+        min-height: 23vh;
+        height: auto;
+    }
+    .contact-me h1 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+    .contact-me a {
+        width: 100px;
+    }
+    .contact-me span {
+        font-size: 1.5rem;
+    }
+    .contact-me h3 {
+        font-size: 0.9rem;
+    } 
+
+    .about-avatar {
+        height: 80%;
+    }
+}

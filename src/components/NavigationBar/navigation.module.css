@@ -1,0 +1,86 @@
+.navbar-container{
+  top: 0;
+  width: 100%;
+  position: fixed;
+  height: 10vh;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--text-color);
+  background-color: var(--main-color);
+  scroll-snap-align: start;
+  z-index: 1;
+}
+
+.navbar-container h1{
+  font-size: 36px;
+  color: var(--foreground-color);
+}
+
+nav .link-nav{
+  margin: 0 2rem;
+  text-decoration: none;
+  color: var(--text-color);
+  transition: 0.2s;
+  font-size: large;
+  font-weight: 600;
+}
+
+nav link-nav:hover{
+  color: var(--foreground-color);
+  border-bottom: solid 2px;
+}
+
+header .nav-btn{
+  padding: 5px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
+@media only screen and (max-width: 1024px) {
+  header .nav-btn{
+    visibility: visible;
+    opacity: 1;
+  }
+
+  header nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    transition: transform 0.5s ease-in-out;
+    background-color: var(--main-color);
+    transform: translateY(-100vh);
+    
+  }
+
+  header .responsive-nav{
+    transform: none;
+  }
+
+  nav .nav-close-btn{
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+
+  nav a{
+    font-size: 1.5rem;
+  }
+
+  .nav-icon{
+    color: var(--text-color);
+    font-size: 1.5rem;
+  }
+}
