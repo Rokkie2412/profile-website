@@ -20,7 +20,7 @@ const Home = (homeId: string): React.ReactElement => {
       className={styles['motion-container']}
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.9 }}
-      target='_blank' href='https://drive.google.com/file/d/1tUUMled7aZJSDJxX2yXFyTI_30YpfLAL/view?usp=sharing' rel="noreferrer">
+      target='_blank' href='https://drive.google.com/file/d/1AHsmmWgSqMW-AGqBhgvsViIY4gSU784y/view?usp=drive_link' rel="noreferrer">
       <p className={styles['text-button']}>Download CV </p>
       <IoDocumentText aria-hidden={true} className={styles.buttonIcon}/>
       </motion.a>

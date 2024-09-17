@@ -1,13 +1,14 @@
-import { NavigationBar, About, Footer, Certification, Contact } from './components'
+import { NavigationBar, About, Footer, Certification, Contact, Experience } from './components'
 import {href} from './config'
 
 const App = () => {
   return (
     <div>
       {NavigationBar(href)}
-      {About('home')}
-      {Contact()}
-      {Certification()}
+      {About('about')}
+      {Contact('contact')}
+      {Experience('experience')}
+      {Certification('certif')}
       {Footer()}
     </div>
   )
